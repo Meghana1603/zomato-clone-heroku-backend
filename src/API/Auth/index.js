@@ -80,7 +80,7 @@ Router.get(
     passport.authenticate("google", {failureRedirect: "/"}),
         (req,res) => {
             return res.redirect(
-                `http://18.216.155.156:3080/google/${req.session.passport.user.token}`
+                `https://zomatoclone-netlify.netlify.app/google/${req.session.passport.user.token}`
               );
     }
 );
